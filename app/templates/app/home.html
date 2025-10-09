@@ -1,0 +1,11 @@
+{% extends 'app/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Welcome to Product Management System</h1>
+<p>Manage your products easily.</p>
+
+<a href="{% url 'product-detail' %}" class="btn btn-primary mt-3">View Products</a>
+<a href="{% url 'product-create' %}" class="btn btn-success mt-3">Add Product</a>
+{% endblock %}
